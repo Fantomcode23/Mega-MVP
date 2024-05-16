@@ -1,0 +1,20 @@
+.student-user {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+  }
+  
+  .student-user h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .student-user ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .student-user ul ul {
+    list-style-type: circle;
+    margin-left: 20px;
+  }
