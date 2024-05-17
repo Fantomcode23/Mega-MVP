@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Organisers | Tivotal</title>
+
+    <!--swiper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header class="header">
+      <a href="#" class="logo"><span>Campus</span>Connect</a>
+
+      <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#service">service</a>
+        <a href="#about">about</a>
+        <a href="#gallery">gallery</a>
+        <a href="signin.html">signin</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+      </nav>
+
+      <div id="menu-bars" class="fas fa-bars"></div>
+    </header>
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Connect with Tech<br><span> Campus Connect </span></h3>
+        <a href="#" class="btn">Upcoming</a>
+      </div>
+
+      <div class="swiper-container home-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="final classical.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="final2.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="final.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="melody4.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="cricket.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="COMIGSOON 1.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="signin" id="signin">
+        <h1 class="heading">sign <span>in/out</span></h1>
+  
+        <div class="signin-container">
+          <div class="signin-box">
+            <h3>sign in</h3>
+            <form action="#">
+              <input type="email" placeholder="email" />
+              <input type="password" placeholder="password" />
+              <input type="submit" value="sign in" class="btn" />
+            </form>
+          </div>
+  
+          <div class="signin-box">
+            <h3>sign out</h3>
+            <p>You are currently signed in.</p>
+            <a href="#" class="btn">sign out</a>
+          </div>
+        </div>
+      </section> -->
+
+    <!-- service section starts  -->
+    <section class="service" id="service">
+      <h1 class="heading">our <span>services</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <a href="invite.html">
+          <button><i class="fas fa-envelope"></i></button>
+          <h3>invitation card design</h3>
+          <p>
+            Create and send customized invitations swiftly
+          </p>
+        </div>
+
+        <div class="box">
+          <a href="coe1.html">
+          <button><i class="fas fa-calendar"></i></button>
+          
+          <h3>Calendar</h3>
+          
+          <p>
+            Stay organized with a handy event planner
+          </p>
+        </div>
+
+        <div class="box">
+          <a href="r.html">
+            <button><i class="fas fa-bell"></i></button>
+          <h3>Remainder</h3>
+          <p>
+            Never miss a deadline with cutomizable alerts
+          </p>
+        </div>
+
+        <div class="box">
+          <a href="sponsers.html">
+          <button><i class="fas fa-envelope"></i></button>
+
+          <h3>Sponsors</h3>
+          <p>
+            Connect with advertisers easily to support your event
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>venue selection</h3>
+          <p>
+            Find the perfect location for your event hassel-free
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-birthday-cake"></i>
+          <h3>food catering</h3>
+          <p>
+            Arrange delicious cuisine for your event effortlessly 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section starts  -->
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> us</h1>
+      <p style="color: rgb(150, 138, 138);font-size: large; ">
+        Campus Connect: Your central hub for seamless event coordination. We unite college clubs, sponsors, and vendors, overcoming logistical hurdles to create unforgettable experiences together.
+
+      </p>
+      <div class="row">
+        <div class="image">
+          <!-- <img src="images/about.jpg" alt="" /> -->
+        </div>
+
+        <div class="content">
+          <h3>your occasion deserves our careful planning</h3>
+          
+          <p>
+           
+          </p>
+          <a href="#" class="btn">reach us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- gallery section starts  -->
+    <section class="gallery" id="gallery">
+      <h1 class="heading">our <span>gallery</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="egames.jpg" alt="" />
+          <h3 class="title">best events</h3>
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+        <!--
+        document.addEventListener('DOMContentLoaded', function() {
+          const calendar = document.getElementById('calendar');
+          const addEventForm = document.getElementById('addEventForm');
+          const eventDate = document.getElementById('eventDate');
+          const eventTitle = document.getElementById('eventTitle');
+          const eventTime = document.getElementById('eventTime');
+          let events = [];
+        
+          renderCalendar();
+        
+          addEventForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            if (eventDate.value && eventTitle.value) {
+              events.push({ date: eventDate.value, title: eventTitle.value, time: eventTime.value });
+              renderCalendar();
+              addEventForm.reset();
+            } else {
+              alert('Please fill in both date and title fields.');
+            }
+          });
+        
+          function renderCalendar() {
+            calendar.innerHTML = '';
+            events.forEach(event => {
+              calendar.innerHTML += <div>${event.date}: ${event.title} (${event.time})</div>;
+            });
+          }
+        });-->
+        <div class="box">
+          <img src="fest.jpg" alt="" />
+          <h3 class="title">best events</h3>
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="coding pic.webp" alt="" />
+          <h3 class="title">best events</h3>
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="conference.png" alt="" />
+          <h3 class="title">best events</h3>
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="vendor pic.webp" alt="" />
+          <h3 class="title">best events</h3>
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="designers quest.jpg" alt="" />
+          <h3 class="title">best events</h3>
+          <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-share"></a>
+            <a href="#" class="fas fa-eye"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="price" id="price">
+      <h1 class="heading">our <span>pricing</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <h3 class="title">basic for College Club</h3>
+          <h3 class="amount">Rs.249.00/mo</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>Access to large student community</li>
+            <li><i class="fas fa-check"></i>Collaboration with other college clubs </li>
+            
+          </ul>
+          <a href="#" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+          <h3 class="title">prime for College Club</h3>
+          <h3 class="amount">Rs.499.00/mo</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>Access to large student community</li>
+            <li><i class="fas fa-check"></i>Collaboration with other college clubs </li>
+            <li><i class="fas fa-check"></i> Event analytics</li>
+            <li><i class="fas fa-check"></i> DJ and Concert promotion</li>
+            
+          </ul>
+          <a href="#" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+          <h3 class="title"> Sponserers</h3>
+          <h3 class="amount">Rs.199/mo</h3>
+          <ul>
+            <li><i class="fas fa-check">Event analytics</i></li>
+            <li><i class="fas fa-check"></i>Crowd size insights</li>
+            <li><i class="fas fa-check"></i>Return Benefits</li>
+            
+          </ul>
+          <a href="#" class="btn">check out</a>
+        </div>
+
+        <div class="box">
+          <h3 class="title">Vendors</h3>
+          <h3 class="amount">Rs.299.00/mo</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>Crowd insights</li>
+            <li><i class="fas fa-check"></i>Profit analysis</li>
+            <li><i class="fas fa-check"></i>Collaboration access</li>
+           
+          </ul>
+          <a href="#" class="btn">check out</a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- review section starts  -->
+    <section class="reivew" id="review">
+      <h1 class="heading">Feedback </h1>
+
+      <div class="review-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="person1.jpg" alt="" />
+              <div class="user-info">
+                <h3>nayana</h3>
+                <span>happy customer</span>
+              </div>
+            </div>
+            <p>
+              The vendor stalls provided an excellent variety of high-quality products with friendly and helpful service.
+            </p>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="person 2.jpg" alt="" />
+              <div class="user-info">
+                <h3>john</h3>
+                <span>satisfied customer</span>
+              </div>
+            </div>
+            <p>
+              The vendor stalls had a good selection of products, but there is room for improvement in organization and service.
+            </p>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="person3.jpg" alt="" />
+              <div class="user-info">
+                <h3>david</h3>
+                <span>Below satisfactory customer</span>
+              </div>
+            </div>
+            <p>
+              The vendor stalls were disorganized, had limited product variety, and provided poor customer service.
+            </p>
+          </div>
+
+          <div class="swiper-slide box">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="person4.jpg" alt="" />
+              <div class="user-info">
+                <h3>rose</h3>
+                <span>Average customer</span>
+              </div>
+            </div>
+            <p>
+              The vendor stalls were decent, offering a fair variety of products and satisfactory customer service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section starts  -->
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>contact</span> us</h1>
+
+      <form action="">
+        <div class="inputBox">
+          <input type="text" placeholder="name" />
+          <input type="email" placeholder="email" />
+        </div>
+        <div class="inputBox">
+          <input type="tel" placeholder="number" />
+          <input type="text" placeholder="subject" />
+        </div>
+        <textarea
+          name=""
+          placeholder="message"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" value="send message" class="btn" />
+      </form>
+    </section>
+
+    <!-- footer section starts  -->
+    <section class="footer">
+      <div class="box-container">
+        
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+                    <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> gallery </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> reivew </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> contact </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                    <a href="#"> <i class="fas fa-envelope"></i> campusconnect@gmail.com </a>
+          <a href="#"> <i class="fas fa-envelope"></i> fantomcode19@gmail.com </a>
+          <a href="#">
+            <i class="fas fa-map-marker-alt"></i> Bangalore, india - 560054
+          </a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin-in"></i> linkedin </a>
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span>CampusConnect</span> | all rights reserved
+      </div>
+    </section>
+
+    
+
+      <h3>choose color</h3>
+
+      <div class="buttons">
+        <div class="theme-btn" style="background: #ccff33"></div>
+        <div class="theme-btn" style="background: #d35400"></div>
+        <div class="theme-btn" style="background: #f39c12"></div>
+        <div class="theme-btn" style="background: #1abc9c"></div>
+        <div class="theme-btn" style="background: #3498db"></div>
+        <div class="theme-btn" style="background: #9b59b6"></div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--JS file-->
+    <script src="app.js"></script>
+  </body>
+</html>
